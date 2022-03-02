@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.rounded-corners{
+  height: 118px;
+  width: 118px; 
+  border-radius: 50%;
+  border:4px solid green;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@layer components{
+  
+  .navbar{
+    @apply bg-white  py-4 fixed top-0 left-0 right-0 shadow-lg
+  }
+
+  .center-flex{
+   @apply flex items-center
+  }
+
+  .section-container{
+    @apply w-11/12 mx-auto py-4 px-5 rounded shadow-lg bg-white my-3
+  }
+  .section-text-italic {
+    @apply text-byellow font-sans italic font-bold text-xl
+  }
+
+  .divider{
+    @apply border-t border-bogrey w-full
+  }
+  .card{
+   @apply  rounded-lg bg-white
+  }
+}
+/* 
+.search-results::-webkit-scrollbar {
+  display: none;
+} */
+
+body {
+  margin: 0;
+  position: relative;
+  background: white;
+  height: 100%;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.responsive-text{
+  @apply text-xs sm:text-sm md:text-base
+}
+
+.bottom-text {
+  @apply pr-5 lg:pr-16 font-bold
+}
+
+.wallet {
+  @apply flex items-center flex-col text-center
+}

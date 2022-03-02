@@ -1,0 +1,37 @@
+.test {
+  background: #000;
+}
+.input-bg{
+  background: rgba(246, 73, 0, 10%);
+}
+.grey-text{
+  background: rgba(0, 0, 0, 56%);
+}
+
+.profile-list::-webkit-scrollbar {
+  display: none;
+}
+
+.profile-list {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.rounded-corners {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid green;
+  overflow: hidden;
+}
+
+.main-grid {
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+
+.cart-item{
+  display:grid;
+ 
+  grid-template-columns: 1fr 3fr;
+}
